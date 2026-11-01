@@ -16,6 +16,9 @@ Control the music playing on your phone, PC, speaker or TV without leaving your 
 </div>
 
 ---
+![alt text](https://raw.githubusercontent.com/Zarcross-dev/spotify-remote/refs/heads/main/assets/img/example-img.jpg "Overlay screenshot")
+
+---
 
 ## Features
 
