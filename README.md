@@ -5,13 +5,13 @@
 **A Spotify Connect remote for the Nintendo Switch, as an Ultrahand / Tesla overlay.**
 Control the music playing on your phone, PC, speaker or TV without leaving your game.
 
-[![Stars](https://img.shields.io/github/stars/zarcross-dev/spotify-remote?style=flat&color=yellow)](https://github.com/zarcross-dev/spotify-remote/stargazers)
-[![Latest release](https://img.shields.io/github/v/release/zarcross-dev/spotify-remote?label=latest&color=blue)](https://github.com/zarcross-dev/spotify-remote/releases/latest)
-[![License](https://img.shields.io/github/license/zarcross-dev/spotify-remote?color=189c11)](LICENSE)
-[![Build](https://img.shields.io/github/actions/workflow/status/zarcross-dev/spotify-remote/ci.yml?branch=main&label=build)](https://github.com/zarcross-dev/spotify-remote/actions/workflows/ci.yml)
-[![Language](https://img.shields.io/badge/language-C%2B%2B-ba1632?logo=cplusplus)](https://github.com/zarcross-dev/spotify-remote)
-[![Downloads](https://img.shields.io/github/downloads/zarcross-dev/spotify-remote/total?color=6f42c1)](https://github.com/zarcross-dev/spotify-remote/releases)
-[![Issues](https://img.shields.io/github/issues/zarcross-dev/spotify-remote?color=222222)](https://github.com/zarcross-dev/spotify-remote/issues)
+[![Stars](https://img.shields.io/github/stars/Zarcross-dev/spotify-remote?style=flat&color=yellow)](https://github.com/Zarcross-dev/spotify-remote/stargazers)
+[![Latest release](https://img.shields.io/github/v/release/Zarcross-dev/spotify-remote?label=latest&color=blue)](https://github.com/Zarcross-dev/spotify-remote/releases/latest)
+[![License](https://img.shields.io/github/license/Zarcross-dev/spotify-remote?color=189c11)](LICENSE)
+[![Build](https://img.shields.io/github/actions/workflow/status/Zarcross-dev/spotify-remote/ci.yml?branch=main&label=build)](https://github.com/Zarcross-dev/spotify-remote/actions/workflows/ci.yml)
+[![Language](https://img.shields.io/badge/language-C%2B%2B-ba1632?logo=cplusplus)](https://github.com/Zarcross-dev/spotify-remote)
+[![Downloads](https://img.shields.io/github/downloads/Zarcross-dev/spotify-remote/total?color=6f42c1)](https://github.com/Zarcross-dev/spotify-remote/releases)
+[![Issues](https://img.shields.io/github/issues/Zarcross-dev/spotify-remote?color=222222)](https://github.com/Zarcross-dev/spotify-remote/issues)
 
 </div>
 
@@ -36,7 +36,7 @@ Control the music playing on your phone, PC, speaker or TV without leaving your 
   | Right stick ↑ / ↓ | Volume up / down |
 
 > [!IMPORTANT]
-> Spotify only allows playback control with **Spotify Premium**. The zarcross-dev of the Spotify developer app (you) also needs Premium.
+> Spotify only allows playback control with **Spotify Premium**. The -dev of the Spotify developer app (you) also needs Premium.
 
 ---
 
@@ -53,7 +53,7 @@ Control the music playing on your phone, PC, speaker or TV without leaving your 
 
 ### 1. Download
 
-Open the **[Releases page](https://github.com/zarcross-dev/spotify-remote/releases/latest)** and download:
+Open the **[Releases page](https://github.com/-dev/spotify-remote/releases/latest)** and download:
 
 - **`spotify-remote.ovl`**: the overlay
 - **`spotify_auth.py`**: the PC helper that creates `config.ini` (only needed for setup method A)
@@ -175,7 +175,7 @@ After editing the file by hand, choose **Reload config.ini** in the overlay.
 | "Spotify Premium is required" | Playback control needs Premium (Spotify's rule). |
 | A playlist shows no tracks | In development mode, Spotify only lists tracks of playlists you own or collaborate on. Any playlist can still be played. |
 
-**Debug log:** while the Setup screen is open, add `log` to its address (e.g. `http://192.168.1.42:8888/k3m9xa/log`) for a live log of every request, its result and any errors. Secrets and tokens are never logged. Please attach it when you [open an issue](https://github.com/zarcross-dev/spotify-remote/issues).
+**Debug log:** while the Setup screen is open, add `log` to its address (e.g. `http://192.168.1.42:8888/k3m9xa/log`) for a live log of every request, its result and any errors. Secrets and tokens are never logged. Please attach it when you [open an issue](https://github.com/Zarcross-dev/spotify-remote/issues).
 
 ---
 
