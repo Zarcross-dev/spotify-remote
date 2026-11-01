@@ -1,0 +1,17 @@
+; Spotify Remote overlay configuration
+; Copy to sdmc:/switch/spotify-remote/config.ini
+;
+; 1. Create an app at https://developer.spotify.com/dashboard (select "Web API")
+; 2. Add this Redirect URI to the app:  http://127.0.0.1:8888/callback
+; 3. Fill in client_id / client_secret below
+; 4. Get refresh_token with tools/spotify_auth.py on a PC, or use the overlay's
+;    "Setup / link account" screen (it fills this file in for you)
+[spotify]
+client_id=
+client_secret=
+refresh_token=
+device_id=
+poll_interval_ms=2000
+ssl_verify=1
+; 1 = also write sdmc:/switch/spotify-remote/debug.log (live log: Setup screen address + "log")
+debug_log=0

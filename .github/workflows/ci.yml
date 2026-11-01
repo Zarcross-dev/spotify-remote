@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  host-tests:
+    name: Host tests (mock Spotify API)
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends g++-14 libcurl4-openssl-dev python3
+
+      - name: Run tests
+        env:
+          CXX: g++-14
+        run: tests/host/run.sh
+
+      - name: Check PC helper syntax
+        run: python3 -m py_compile tools/spotify_auth.py
+
+  build-overlay:
+    name: Build overlay (.ovl)
+    runs-on: ubuntu-24.04
+    container: devkitpro/devkita64:latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install portlibs
+        run: dkp-pacman -S --noconfirm --needed switch-curl switch-zlib
+
+      - name: Build
+        run: make -j"$(nproc)"
+
+      - name: Upload overlay
+        uses: actions/upload-artifact@v4
+        with:
+          name: spotify-remote
+          path: out/
+          if-no-files-found: error
