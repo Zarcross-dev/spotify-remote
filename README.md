@@ -209,3 +209,11 @@ Spotify Remote is free software, licensed under the **[GNU General Public Licens
 Third-party components keep their own licenses. See **[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)**.
 
 *Not affiliated with Spotify AB. Spotify is a trademark of Spotify AB.*
+
+---
+
+## AI Usage
+- This overlay was build with AIs (Claude Opus 5.5).
+- The reason is : This project was initialy made ONLY for my private usage. I just wanted to control my desktop Spotify without moving or checking my phone everytime.
+- THIS IS NOT PERFECT, BECAUSE IT WAS NOT MADE TO BE PERFECT.
+- Feel free to open issues, fork the project, make some PR, i'll review them with attention.
